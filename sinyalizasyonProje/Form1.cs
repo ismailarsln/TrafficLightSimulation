@@ -77,7 +77,7 @@ namespace sinyalizasyonProje
         }
 
         private void yy2_editGreen()
-        {                                                      //silinen...................
+        {
             yYol2_red.Visible = false;
             yYol2_green.Visible = Enabled;
         }
