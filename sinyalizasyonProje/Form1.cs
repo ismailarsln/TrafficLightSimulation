@@ -12,9 +12,9 @@ namespace sinyalizasyonProje
 {
     public partial class Form1 : Form
     {
-        int s = 0; //sayaç numarasını belirtiyor.
-        int sYaya = 9;
-        int sAna = 19;
+        int s = 0;      //genel sayaç.
+        int sYaya = 9;  //yayalar için sayaç.
+        int sAna = 19;  //anayol için sayaç.
 
         public void ay1_editRed() //anayol 1 kırmızı oluyor.
         {
@@ -58,9 +58,9 @@ namespace sinyalizasyonProje
             aYol2_yellow.Visible = false;
         }
 
-        private void yy1_editRed() //yayayol 1 kırmızı oluyor.
+        private void yy1_editRed() 
         {
-            yYol1_red.Visible = Enabled; //yYol1, "yaya yolu" 1 anlamına geliyor.
+            yYol1_red.Visible = Enabled;
             yYol1_green.Visible = false;
         }
 
@@ -70,22 +70,22 @@ namespace sinyalizasyonProje
             yYol1_green.Visible = Enabled;
         }
 
-        private void yy2_editRed() //yayayol 2 kırmızı oluyor.
+        private void yy2_editRed()
         {
             yYol2_red.Visible = Enabled;
             yYol2_green.Visible = false;
         }
 
         private void yy2_editGreen()
-        {
+        {                                                      //silinen...................
             yYol2_red.Visible = false;
             yYol2_green.Visible = Enabled;
         }
 
         private void durum1() //burada durumlar bildiriliyor.
         {
-            lAna.Text = "Geç!";
-            lAna1.Text = "Geç!";
+            lAna.Text = "Geç";
+            lAna1.Text = "Geç";
 
             ay1_editGreen();
             ay2_editGreen();
@@ -97,8 +97,11 @@ namespace sinyalizasyonProje
 
         private void durum2()
         {
-            lAna.Text = "Yavaşla!";
-            lAna1.Text = "Yavaşla!";
+            lAna.Font = new Font("Microsoft Sans Serif", 12);
+            lAna1.Font = new Font("Microsoft Sans Serif", 12);
+
+            lAna.Text = "Yavaşla";
+            lAna1.Text = "Yavaşla";
 
             ay1_editYellow();
             ay2_editYellow();
@@ -108,8 +111,11 @@ namespace sinyalizasyonProje
 
         private void durum3()
         {
-            lAna.Text = "Dur!";
-            lAna1.Text = "Dur!";
+            lAna.Font = new Font("Microsoft Sans Serif", 20);
+            lAna1.Font = new Font("Microsoft Sans Serif", 20);
+
+            lAna.Text = "Dur";
+            lAna1.Text = "Dur";
 
             timer3.Start();
 
@@ -121,7 +127,7 @@ namespace sinyalizasyonProje
             backAna();
         }
 
-        private void durum4()
+        public void durum4()
         {
             lYaya.Text = sYaya.ToString();
             lYaya1.Text = sYaya.ToString();
@@ -130,15 +136,16 @@ namespace sinyalizasyonProje
             ay1_editRed();
             ay2_editRed();
             yy1_editGreen();
-            yy2_editGreen();
+            yy2_editGreen();                 
 
             backYaya();
         }
+
         private void durum5()
         {   
             timer2.Stop();
-            lYaya.Text = "Dur!";
-            lYaya1.Text = "Dur!";
+            lYaya.Text = "Dur";
+            lYaya1.Text = "Dur";
 
             ay1_editRed();
             ay2_editRed();
@@ -209,7 +216,7 @@ namespace sinyalizasyonProje
             s++;
             label1.Text = "Geçen toplam süre: " + s.ToString();
 
-            if (s == 5) //kaçıncı saniyede hangi duruma geçeceğini söylüyor..
+            if (s == 5) //kaçıncı saniyede hangi duruma geçeceğini söylüyor.
             {
                 durum2();
             }
