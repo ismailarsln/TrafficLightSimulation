@@ -35,9 +35,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.lYaya = new System.Windows.Forms.Label();
-            this.lYaya1 = new System.Windows.Forms.Label();
-            this.lAna1 = new System.Windows.Forms.Label();
+            this.lblYaya = new System.Windows.Forms.Label();
+            this.lblYaya1 = new System.Windows.Forms.Label();
+            this.lblAna1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.lAna = new System.Windows.Forms.Label();
+            this.lblAna = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -176,41 +176,41 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // lYaya
+            // lblYaya
             // 
-            this.lYaya.BackColor = System.Drawing.Color.Transparent;
-            this.lYaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lYaya.ForeColor = System.Drawing.SystemColors.Window;
-            this.lYaya.Location = new System.Drawing.Point(453, 467);
-            this.lYaya.Name = "lYaya";
-            this.lYaya.Size = new System.Drawing.Size(81, 31);
-            this.lYaya.TabIndex = 20;
-            this.lYaya.Text = "Dur";
-            this.lYaya.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblYaya.BackColor = System.Drawing.Color.Transparent;
+            this.lblYaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYaya.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblYaya.Location = new System.Drawing.Point(454, 467);
+            this.lblYaya.Name = "lblYaya";
+            this.lblYaya.Size = new System.Drawing.Size(81, 31);
+            this.lblYaya.TabIndex = 20;
+            this.lblYaya.Text = "Dur";
+            this.lblYaya.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lYaya1
+            // lblYaya1
             // 
-            this.lYaya1.BackColor = System.Drawing.Color.Transparent;
-            this.lYaya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lYaya1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lYaya1.Location = new System.Drawing.Point(634, 467);
-            this.lYaya1.Name = "lYaya1";
-            this.lYaya1.Size = new System.Drawing.Size(81, 31);
-            this.lYaya1.TabIndex = 21;
-            this.lYaya1.Text = "Dur";
-            this.lYaya1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblYaya1.BackColor = System.Drawing.Color.Transparent;
+            this.lblYaya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYaya1.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblYaya1.Location = new System.Drawing.Point(635, 467);
+            this.lblYaya1.Name = "lblYaya1";
+            this.lblYaya1.Size = new System.Drawing.Size(81, 31);
+            this.lblYaya1.TabIndex = 21;
+            this.lblYaya1.Text = "Dur";
+            this.lblYaya1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lAna1
+            // lblAna1
             // 
-            this.lAna1.BackColor = System.Drawing.Color.Transparent;
-            this.lAna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lAna1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lAna1.Location = new System.Drawing.Point(272, 182);
-            this.lAna1.Name = "lAna1";
-            this.lAna1.Size = new System.Drawing.Size(92, 41);
-            this.lAna1.TabIndex = 30;
-            this.lAna1.Text = "Dur!";
-            this.lAna1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAna1.BackColor = System.Drawing.Color.Transparent;
+            this.lblAna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAna1.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblAna1.Location = new System.Drawing.Point(269, 185);
+            this.lblAna1.Name = "lblAna1";
+            this.lblAna1.Size = new System.Drawing.Size(92, 41);
+            this.lblAna1.TabIndex = 30;
+            this.lblAna1.Text = "Dur!";
+            this.lblAna1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -305,17 +305,17 @@
             this.label8.Text = "Yaya Geçidi 2";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lAna
+            // lblAna
             // 
-            this.lAna.BackColor = System.Drawing.Color.Transparent;
-            this.lAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lAna.ForeColor = System.Drawing.SystemColors.Window;
-            this.lAna.Location = new System.Drawing.Point(83, 182);
-            this.lAna.Name = "lAna";
-            this.lAna.Size = new System.Drawing.Size(96, 41);
-            this.lAna.TabIndex = 35;
-            this.lAna.Text = "Dur!";
-            this.lAna.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAna.BackColor = System.Drawing.Color.Transparent;
+            this.lblAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAna.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblAna.Location = new System.Drawing.Point(80, 185);
+            this.lblAna.Name = "lblAna";
+            this.lblAna.Size = new System.Drawing.Size(96, 41);
+            this.lblAna.TabIndex = 35;
+            this.lblAna.Text = "Dur!";
+            this.lblAna.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer3
             // 
@@ -1026,14 +1026,14 @@
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.lAna);
+            this.Controls.Add(this.lblAna);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.lAna1);
-            this.Controls.Add(this.lYaya1);
-            this.Controls.Add(this.lYaya);
+            this.Controls.Add(this.lblAna1);
+            this.Controls.Add(this.lblYaya1);
+            this.Controls.Add(this.lblYaya);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.yYol2_green);
@@ -1097,9 +1097,9 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Timer timer2;
-        public System.Windows.Forms.Label lYaya;
-        public System.Windows.Forms.Label lYaya1;
-        public System.Windows.Forms.Label lAna1;
+        public System.Windows.Forms.Label lblYaya;
+        public System.Windows.Forms.Label lblYaya1;
+        public System.Windows.Forms.Label lblAna1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Label label6;
@@ -1107,7 +1107,7 @@
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label lAna;
+        public System.Windows.Forms.Label lblAna;
         public System.Windows.Forms.Timer timer3;
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button4;

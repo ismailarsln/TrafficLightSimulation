@@ -12,188 +12,20 @@ namespace sinyalizasyonProje
 {
     public partial class Form1 : Form
     {
-        int s = 0;      //genel sayaç.
-        int sYaya = 9;  //yayalar için sayaç.
-        int sAna = 19;  //anayol için sayaç.
+        int s = 0;      // Genel sayaç.
+        int sYaya = 9;  // Yayalar için sayaç.
+        int sAna = 19;  // Anayol için sayaç.
 
-        public void ay1_editRed() //anayol 1 kırmızı oluyor.
-        {
-            aYol1_red.Visible = Enabled;
-            aYol1_yellow.Visible = false;
-            aYol1_green.Visible = false;
-        }
-
-        private void ay1_editYellow()
-        {
-            aYol1_red.Visible = false;
-            aYol1_yellow.Visible = Enabled;
-            aYol1_green.Visible = false;
-        }
-
-        public void ay1_editGreen()
-        {
-            aYol1_green.Visible = Enabled;
-            aYol1_red.Visible = false;
-            aYol1_yellow.Visible = false; 
-        }
-
-        private void ay2_editRed() //anayol 2 kırmızı oluyor.
-        {
-            aYol2_red.Visible = Enabled;
-            aYol2_yellow.Visible = false;
-            aYol2_green.Visible = false;
-        }
-
-        private void ay2_editYellow()
-        {
-            aYol2_red.Visible = false;
-            aYol2_yellow.Visible = Enabled;
-            aYol2_green.Visible = false;
-        }
-
-        public void ay2_editGreen()
-        {
-            aYol2_green.Visible = Enabled;
-            aYol2_red.Visible = false;
-            aYol2_yellow.Visible = false;
-        }
-
-        private void yy1_editRed() 
-        {
-            yYol1_red.Visible = Enabled;
-            yYol1_green.Visible = false;
-        }
-
-        private void yy1_editGreen()
-        {
-            yYol1_red.Visible = false;
-            yYol1_green.Visible = Enabled;
-        }
-
-        private void yy2_editRed()
-        {
-            yYol2_red.Visible = Enabled;
-            yYol2_green.Visible = false;
-        }
-
-        private void yy2_editGreen()
-        {
-            yYol2_red.Visible = false;
-            yYol2_green.Visible = Enabled;
-        }
-
-        private void durum1() //burada durumlar bildiriliyor.
-        {
-            lAna.Text = "Geç";
-            lAna1.Text = "Geç";
-
-            ay1_editGreen();
-            ay2_editGreen();
-            yy1_editRed();
-            yy2_editRed();
-
-            backAna(); 
-        }
-
-        private void durum2()
-        {
-            lAna.Font = new Font("Microsoft Sans Serif", 12);
-            lAna1.Font = new Font("Microsoft Sans Serif", 12);
-
-            lAna.Text = "Yavaşla";
-            lAna1.Text = "Yavaşla";
-
-            ay1_editYellow();
-            ay2_editYellow();
-            yy1_editRed();
-            yy2_editRed();
-        }
-
-        private void durum3()
-        {
-            lAna.Font = new Font("Microsoft Sans Serif", 20);
-            lAna1.Font = new Font("Microsoft Sans Serif", 20);
-
-            lAna.Text = "Dur";
-            lAna1.Text = "Dur";
-
-            timer3.Start();
-
-            ay1_editRed();
-            ay2_editRed();
-            yy1_editRed();
-            yy2_editRed();
-
-            backAna();
-        }
-
-        public void durum4()
-        {
-            lYaya.Text = sYaya.ToString();
-            lYaya1.Text = sYaya.ToString();
-            timer2.Start();
-
-            ay1_editRed();
-            ay2_editRed();
-            yy1_editGreen();
-            yy2_editGreen();                 
-
-            backYaya();
-        }
-
-        private void durum5()
-        {   
-            timer2.Stop();
-            lYaya.Text = "Dur";
-            lYaya1.Text = "Dur";
-
-            ay1_editRed();
-            ay2_editRed();
-            yy1_editRed();
-            yy2_editRed();
-
-            backYaya();
-        }
-
-        private void durum6()
-        {
-            ay1_editYellow();
-            ay2_editYellow();
-            yy1_editRed();
-            yy2_editRed();
-
-            backAna();
-        }
-
-        void TransparetBackground(Control C)
-        {
-            C.Visible = false;
-
-            C.Refresh();
-            Application.DoEvents();
-
-            Rectangle screenRectangle = RectangleToScreen(this.ClientRectangle);
-            int titleHeight = screenRectangle.Top - this.Top;
-            int Right = screenRectangle.Left - this.Left;
-
-            Bitmap bmp = new Bitmap(this.Width, this.Height);
-            this.DrawToBitmap(bmp, new Rectangle(0, 0, this.Width, this.Height));
-            Bitmap bmpImage = new Bitmap(bmp);
-            bmp = bmpImage.Clone(new Rectangle
-                (C.Location.X + Right, C.Location.Y + titleHeight, C.Width, C.Height), bmpImage.PixelFormat);
-            C.BackgroundImage = bmp;
-
-            C.Visible = true;
-        }
-
-        public Form1() //form açıldığında gelecek ilk ekran..
+        public Form1() // Form açıldığında gelecek ilk ekran.
         {
             InitializeComponent();
+
             label1.Text = "Geçen toplam süre: " + s.ToString();
+
             durum1();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Karşıya geç butonu
         {
             timer1.Start();
             button1.Enabled = false;
@@ -202,7 +34,7 @@ namespace sinyalizasyonProje
             button4.Enabled = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // Karşıya geç butonu
         {
             timer1.Start();
             button1.Enabled = false;
@@ -211,12 +43,35 @@ namespace sinyalizasyonProje
             button4.Enabled = true;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // Devam et butonu
+        {
+            timer1.Start();
+
+            if (sYaya < 9 && 0 < sYaya)
+            {
+                timer2.Start();
+            }
+            if (sAna < 19 && 0 < sAna)
+            {
+                timer3.Start();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e) // Duraklat butonu
+        {
+            timer1.Stop();
+            timer2.Stop();
+            timer3.Stop();
+
+            button3.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) // Geçen toplam süreyi sayan sayaç
         {
             s++;
             label1.Text = "Geçen toplam süre: " + s.ToString();
 
-            if (s == 5) //kaçıncı saniyede hangi duruma geçeceğini söylüyor.
+            if (s == 5) // Kaçıncı saniyede hangi duruma geçeceğini söylüyor
             {
                 durum2();
             }
@@ -243,68 +98,36 @@ namespace sinyalizasyonProje
                 timer1.Stop();
                 timer3.Stop();
                 MessageBox.Show("Completed", "Info");
-                s = 0;
+
+                s = 0;  // Sayaçlar ana değerlerine dönüyor.
                 sYaya = 9;
                 sAna = 19;
 
-                button1.Enabled = true;
+                button1.Enabled = true; // Süre dolduğunda buttonların durumu
                 button2.Enabled = true;
+                button3.Enabled = false;
+                button4.Enabled = false;
             }
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e) // Yaya geçidi için sayaç
         {
-            lYaya.Text = sYaya.ToString();
-            lYaya1.Text = sYaya.ToString();
+            lblYaya.Text = sYaya.ToString();
+            lblYaya1.Text = sYaya.ToString();
             sYaya--;
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
+        private void timer3_Tick(object sender, EventArgs e) // Ana yol için sayaç
         {
-            lAna.Text = sAna.ToString();
-            lAna1.Text = sAna.ToString();
+            lblAna.Text = sAna.ToString();
+            lblAna1.Text = sAna.ToString();
             sAna--;
-        }
-
-        private void backAna()
-        {
-            TransparetBackground(lAna);
-            TransparetBackground(lAna1);
-        }
-
-        private void backYaya()
-        {
-            TransparetBackground(lYaya);
-            TransparetBackground(lYaya1);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            backAna();
-            backYaya();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-
-            if(sYaya < 9 && 0 < sYaya)
-            {
-                timer2.Start();
-            }
-            if (sAna < 19 && 0 < sAna)
-            {
-                timer3.Start();
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            timer1.Stop();
-            timer2.Stop();
-            timer3.Stop();
-
-            button3.Enabled = true;
+            backgroundAna();  // Işığının üzerindeki sayacın arka planını otomatik ayarlar.
+            backgroundYaya();
         }
     }
 }
