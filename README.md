@@ -1,4 +1,4 @@
-# Signalization Project
+# Traffic Light Simulation Project
 
 #### We create a traffic signal project with C# and Visual Studio.
 
