@@ -49,16 +49,6 @@
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.yYol2_green = new System.Windows.Forms.PictureBox();
-            this.yYol2_red = new System.Windows.Forms.PictureBox();
-            this.aYol2_red = new System.Windows.Forms.PictureBox();
-            this.yYol1_green = new System.Windows.Forms.PictureBox();
-            this.yYol1_red = new System.Windows.Forms.PictureBox();
-            this.aYol1_yellow = new System.Windows.Forms.PictureBox();
-            this.aYol1_red = new System.Windows.Forms.PictureBox();
-            this.aYol1_green = new System.Windows.Forms.PictureBox();
-            this.aYol2_green = new System.Windows.Forms.PictureBox();
-            this.aYol2_yellow = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -100,21 +90,32 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.yYol2_green = new System.Windows.Forms.PictureBox();
+            this.yYol2_red = new System.Windows.Forms.PictureBox();
+            this.aYol1_yellow = new System.Windows.Forms.PictureBox();
+            this.aYol1_red = new System.Windows.Forms.PictureBox();
+            this.aYol1_green = new System.Windows.Forms.PictureBox();
+            this.aYol2_green = new System.Windows.Forms.PictureBox();
+            this.aYol2_yellow = new System.Windows.Forms.PictureBox();
+            this.aYol2_red = new System.Windows.Forms.PictureBox();
+            this.yYol1_green = new System.Windows.Forms.PictureBox();
+            this.yYol1_red = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yYol2_green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yYol2_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_yellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol2_green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol2_yellow)).BeginInit();
-            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -348,116 +349,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // yYol2_green
-            // 
-            this.yYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
-            this.yYol2_green.Location = new System.Drawing.Point(600, 272);
-            this.yYol2_green.Name = "yYol2_green";
-            this.yYol2_green.Size = new System.Drawing.Size(150, 290);
-            this.yYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol2_green.TabIndex = 13;
-            this.yYol2_green.TabStop = false;
-            this.yYol2_green.Visible = false;
-            // 
-            // yYol2_red
-            // 
-            this.yYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
-            this.yYol2_red.Location = new System.Drawing.Point(600, 272);
-            this.yYol2_red.Name = "yYol2_red";
-            this.yYol2_red.Size = new System.Drawing.Size(150, 290);
-            this.yYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol2_red.TabIndex = 12;
-            this.yYol2_red.TabStop = false;
-            this.yYol2_red.Visible = false;
-            // 
-            // aYol2_red
-            // 
-            this.aYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
-            this.aYol2_red.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_red.Name = "aYol2_red";
-            this.aYol2_red.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_red.TabIndex = 6;
-            this.aYol2_red.TabStop = false;
-            this.aYol2_red.Visible = false;
-            // 
-            // yYol1_green
-            // 
-            this.yYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
-            this.yYol1_green.Location = new System.Drawing.Point(419, 272);
-            this.yYol1_green.Name = "yYol1_green";
-            this.yYol1_green.Size = new System.Drawing.Size(150, 290);
-            this.yYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol1_green.TabIndex = 4;
-            this.yYol1_green.TabStop = false;
-            this.yYol1_green.Visible = false;
-            // 
-            // yYol1_red
-            // 
-            this.yYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
-            this.yYol1_red.Location = new System.Drawing.Point(419, 272);
-            this.yYol1_red.Name = "yYol1_red";
-            this.yYol1_red.Size = new System.Drawing.Size(150, 290);
-            this.yYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol1_red.TabIndex = 3;
-            this.yYol1_red.TabStop = false;
-            this.yYol1_red.Visible = false;
-            // 
-            // aYol1_yellow
-            // 
-            this.aYol1_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
-            this.aYol1_yellow.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_yellow.Name = "aYol1_yellow";
-            this.aYol1_yellow.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_yellow.TabIndex = 1;
-            this.aYol1_yellow.TabStop = false;
-            this.aYol1_yellow.Visible = false;
-            // 
-            // aYol1_red
-            // 
-            this.aYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
-            this.aYol1_red.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_red.Name = "aYol1_red";
-            this.aYol1_red.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_red.TabIndex = 0;
-            this.aYol1_red.TabStop = false;
-            this.aYol1_red.Visible = false;
-            // 
-            // aYol1_green
-            // 
-            this.aYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
-            this.aYol1_green.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_green.Name = "aYol1_green";
-            this.aYol1_green.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_green.TabIndex = 2;
-            this.aYol1_green.TabStop = false;
-            this.aYol1_green.Visible = false;
-            // 
-            // aYol2_green
-            // 
-            this.aYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
-            this.aYol2_green.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_green.Name = "aYol2_green";
-            this.aYol2_green.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_green.TabIndex = 8;
-            this.aYol2_green.TabStop = false;
-            this.aYol2_green.Visible = false;
-            // 
-            // aYol2_yellow
-            // 
-            this.aYol2_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
-            this.aYol2_yellow.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_yellow.Name = "aYol2_yellow";
-            this.aYol2_yellow.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_yellow.TabIndex = 7;
-            this.aYol2_yellow.TabStop = false;
-            this.aYol2_yellow.Visible = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -587,7 +478,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(65, 70);
             this.label41.TabIndex = 35;
-            this.label41.Text = "30. Sec";
+            this.label41.Text = "28. Sec";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel5
@@ -1017,12 +908,128 @@
             this.label12.TabIndex = 41;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // yYol2_green
+            // 
+            this.yYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
+            this.yYol2_green.Location = new System.Drawing.Point(600, 272);
+            this.yYol2_green.Name = "yYol2_green";
+            this.yYol2_green.Size = new System.Drawing.Size(150, 290);
+            this.yYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol2_green.TabIndex = 13;
+            this.yYol2_green.TabStop = false;
+            this.yYol2_green.Visible = false;
+            // 
+            // yYol2_red
+            // 
+            this.yYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
+            this.yYol2_red.Location = new System.Drawing.Point(600, 272);
+            this.yYol2_red.Name = "yYol2_red";
+            this.yYol2_red.Size = new System.Drawing.Size(150, 290);
+            this.yYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol2_red.TabIndex = 12;
+            this.yYol2_red.TabStop = false;
+            this.yYol2_red.Visible = false;
+            // 
+            // aYol1_yellow
+            // 
+            this.aYol1_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
+            this.aYol1_yellow.Location = new System.Drawing.Point(56, 122);
+            this.aYol1_yellow.Name = "aYol1_yellow";
+            this.aYol1_yellow.Size = new System.Drawing.Size(150, 440);
+            this.aYol1_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol1_yellow.TabIndex = 1;
+            this.aYol1_yellow.TabStop = false;
+            this.aYol1_yellow.Visible = false;
+            // 
+            // aYol1_red
+            // 
+            this.aYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
+            this.aYol1_red.Location = new System.Drawing.Point(56, 122);
+            this.aYol1_red.Name = "aYol1_red";
+            this.aYol1_red.Size = new System.Drawing.Size(150, 440);
+            this.aYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol1_red.TabIndex = 0;
+            this.aYol1_red.TabStop = false;
+            this.aYol1_red.Visible = false;
+            // 
+            // aYol1_green
+            // 
+            this.aYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
+            this.aYol1_green.Location = new System.Drawing.Point(56, 122);
+            this.aYol1_green.Name = "aYol1_green";
+            this.aYol1_green.Size = new System.Drawing.Size(150, 440);
+            this.aYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol1_green.TabIndex = 2;
+            this.aYol1_green.TabStop = false;
+            this.aYol1_green.Visible = false;
+            // 
+            // aYol2_green
+            // 
+            this.aYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
+            this.aYol2_green.Location = new System.Drawing.Point(241, 122);
+            this.aYol2_green.Name = "aYol2_green";
+            this.aYol2_green.Size = new System.Drawing.Size(150, 440);
+            this.aYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol2_green.TabIndex = 8;
+            this.aYol2_green.TabStop = false;
+            this.aYol2_green.Visible = false;
+            // 
+            // aYol2_yellow
+            // 
+            this.aYol2_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
+            this.aYol2_yellow.Location = new System.Drawing.Point(241, 122);
+            this.aYol2_yellow.Name = "aYol2_yellow";
+            this.aYol2_yellow.Size = new System.Drawing.Size(150, 440);
+            this.aYol2_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol2_yellow.TabIndex = 7;
+            this.aYol2_yellow.TabStop = false;
+            this.aYol2_yellow.Visible = false;
+            // 
+            // aYol2_red
+            // 
+            this.aYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
+            this.aYol2_red.Location = new System.Drawing.Point(241, 122);
+            this.aYol2_red.Name = "aYol2_red";
+            this.aYol2_red.Size = new System.Drawing.Size(150, 440);
+            this.aYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol2_red.TabIndex = 6;
+            this.aYol2_red.TabStop = false;
+            this.aYol2_red.Visible = false;
+            // 
+            // yYol1_green
+            // 
+            this.yYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
+            this.yYol1_green.Location = new System.Drawing.Point(419, 272);
+            this.yYol1_green.Name = "yYol1_green";
+            this.yYol1_green.Size = new System.Drawing.Size(150, 290);
+            this.yYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol1_green.TabIndex = 4;
+            this.yYol1_green.TabStop = false;
+            this.yYol1_green.Visible = false;
+            // 
+            // yYol1_red
+            // 
+            this.yYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
+            this.yYol1_red.Location = new System.Drawing.Point(419, 272);
+            this.yYol1_red.Name = "yYol1_red";
+            this.yYol1_red.Size = new System.Drawing.Size(150, 290);
+            this.yYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol1_red.TabIndex = 3;
+            this.yYol1_red.TabStop = false;
+            this.yYol1_red.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.ClientSize = new System.Drawing.Size(1178, 658);
+            this.Controls.Add(this.lblYaya1);
+            this.Controls.Add(this.lblYaya);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -1032,21 +1039,19 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblAna1);
-            this.Controls.Add(this.lblYaya1);
-            this.Controls.Add(this.lblYaya);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.yYol2_green);
             this.Controls.Add(this.yYol2_red);
-            this.Controls.Add(this.aYol2_red);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.yYol1_green);
-            this.Controls.Add(this.yYol1_red);
             this.Controls.Add(this.aYol1_yellow);
             this.Controls.Add(this.aYol1_red);
             this.Controls.Add(this.aYol1_green);
             this.Controls.Add(this.aYol2_green);
             this.Controls.Add(this.aYol2_yellow);
+            this.Controls.Add(this.aYol2_red);
+            this.Controls.Add(this.yYol1_green);
+            this.Controls.Add(this.yYol1_red);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1062,18 +1067,18 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yYol2_green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yYol2_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_yellow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol1_green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol2_green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aYol2_yellow)).EndInit();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1152,5 +1157,6 @@
         public System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label13;
         public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Timer timer4;
     }
 }

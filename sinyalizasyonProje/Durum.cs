@@ -32,8 +32,6 @@ namespace sinyalizasyonProje
 
             ay1_editYellow();
             ay2_editYellow();
-            yy1_editRed();
-            yy2_editRed();
         }
 
         private void durum3()
@@ -48,8 +46,6 @@ namespace sinyalizasyonProje
 
             ay1_editRed();
             ay2_editRed();
-            yy1_editRed();
-            yy2_editRed();
 
             backgroundAna();
         }
@@ -60,8 +56,6 @@ namespace sinyalizasyonProje
             lblYaya1.Text = sYaya.ToString();
             timer2.Start();
 
-            ay1_editRed();
-            ay2_editRed();
             yy1_editGreen();
             yy2_editGreen();
 
@@ -74,8 +68,6 @@ namespace sinyalizasyonProje
             lblYaya.Text = "Dur";
             lblYaya1.Text = "Dur";
 
-            ay1_editRed();
-            ay2_editRed();
             yy1_editRed();
             yy2_editRed();
 
@@ -86,8 +78,6 @@ namespace sinyalizasyonProje
         {
             ay1_editYellow();
             ay2_editYellow();
-            yy1_editRed();
-            yy2_editRed();
 
             backgroundAna();
         }

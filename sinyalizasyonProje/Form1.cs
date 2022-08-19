@@ -14,7 +14,8 @@ namespace sinyalizasyonProje
     {
         int s = 0;      // Genel sayaç.
         int sYaya = 9;  // Yayalar için sayaç.
-        int sAna = 19;  // Anayol için sayaç.
+        int sAna = 17;  // Anayol için sayaç.
+        int say = 0;
 
         public Form1() // Form açıldığında gelecek ilk ekran.
         {
@@ -62,13 +63,16 @@ namespace sinyalizasyonProje
             timer1.Stop();
             timer2.Stop();
             timer3.Stop();
+            timer4.Stop();
 
             button3.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e) // Geçen toplam süreyi sayan sayaç
         {
+            timer4.Start();
             s++;
+            
             label1.Text = "Geçen toplam süre: " + s.ToString();
 
             if (s == 5) // Kaçıncı saniyede hangi duruma geçeceğini söylüyor
@@ -91,7 +95,7 @@ namespace sinyalizasyonProje
             {
                 durum6();
             }
-            if (s == 30)
+            if (s == 28)
             {
                 durum1();
 
@@ -101,7 +105,8 @@ namespace sinyalizasyonProje
 
                 s = 0;  // Sayaçlar ana değerlerine dönüyor.
                 sYaya = 9;
-                sAna = 19;
+                sAna = 17;
+                say = 0;
 
                 button1.Enabled = true; // Süre dolduğunda buttonların durumu
                 button2.Enabled = true;
@@ -126,8 +131,64 @@ namespace sinyalizasyonProje
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            backgroundAna();  // Işığının üzerindeki sayacın arka planını otomatik ayarlar.
+            backgroundAna();  // Işığının üzerindeki sayacın arka planını otomatik ayarlar
             backgroundYaya();
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            say++;
+            if (say == 175)
+            {
+                yYol1_green.Image = Properties.Resources.effect;
+                yYol2_green.Image = Properties.Resources.effect;
+                backgroundYaya();
+            }
+            if (say == 182)
+            {
+                yYol1_green.Image = Properties.Resources.yayaYesil;
+                yYol2_green.Image = Properties.Resources.yayaYesil;
+                backgroundYaya();
+            }
+            if (say == 190)
+            {
+                yYol1_green.Image = Properties.Resources.effect;
+                yYol2_green.Image = Properties.Resources.effect;
+                backgroundYaya();
+            }
+            if (say == 197)
+            {
+                yYol1_green.Image = Properties.Resources.yayaYesil;
+                yYol2_green.Image = Properties.Resources.yayaYesil;
+                backgroundYaya();
+            }
+
+            if (say == 205)
+            {
+                yYol1_green.Image = Properties.Resources.effect;
+                yYol2_green.Image = Properties.Resources.effect;
+                backgroundYaya();
+            }
+            if (say == 212)
+            {
+                yYol1_green.Image = Properties.Resources.yayaYesil;
+                yYol2_green.Image = Properties.Resources.yayaYesil;
+                backgroundYaya();
+            }
+            if (say == 220)
+            {
+                yYol1_green.Image = Properties.Resources.effect;
+                yYol2_green.Image = Properties.Resources.effect;
+                backgroundYaya();
+            }
+            if (say == 230)
+            {
+                yYol1_green.Image = Properties.Resources.yayaYesil;
+                yYol2_green.Image = Properties.Resources.yayaYesil;
+              //  backgroundYaya();
+
+                timer4.Stop();
+            }
         }
     }
 }

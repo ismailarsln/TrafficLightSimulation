@@ -93,6 +93,16 @@ namespace sinyalizasyonProje.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap effect {
+            get {
+                object obj = ResourceManager.GetObject("effect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap yayaKirmizi {
             get {
                 object obj = ResourceManager.GetObject("yayaKirmizi", resourceCulture);
