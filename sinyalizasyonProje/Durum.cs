@@ -33,8 +33,8 @@ namespace sinyalizasyonProje
 
         private void durum3()
         {
-            lblAna.Font = new Font("Microsoft Sans Serif", 20);
-            lblAna1.Font = new Font("Microsoft Sans Serif", 20);
+            lblAna.Font = new Font("Microsoft Sans Serif", 18);
+            lblAna1.Font = new Font("Microsoft Sans Serif", 18);
 
             lblAna.Text = "Dur";
             lblAna1.Text = "Dur";

@@ -123,7 +123,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(422, 130);
+            this.label1.Location = new System.Drawing.Point(422, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 29);
             this.label1.TabIndex = 5;
@@ -133,7 +133,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(600, 177);
+            this.button1.Location = new System.Drawing.Point(600, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 89);
             this.button1.TabIndex = 14;
@@ -145,7 +145,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(419, 177);
+            this.button2.Location = new System.Drawing.Point(419, 180);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 89);
             this.button2.TabIndex = 15;
@@ -181,7 +181,7 @@
             this.lblYaya.AutoEllipsis = true;
             this.lblYaya.AutoSize = true;
             this.lblYaya.BackColor = System.Drawing.Color.Transparent;
-            this.lblYaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYaya.ForeColor = System.Drawing.SystemColors.Window;
             this.lblYaya.Location = new System.Drawing.Point(3, 0);
             this.lblYaya.Margin = new System.Windows.Forms.Padding(3, 0, 3, 13);
@@ -199,7 +199,7 @@
             this.lblYaya1.AutoEllipsis = true;
             this.lblYaya1.AutoSize = true;
             this.lblYaya1.BackColor = System.Drawing.Color.Transparent;
-            this.lblYaya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYaya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYaya1.ForeColor = System.Drawing.SystemColors.Window;
             this.lblYaya1.Location = new System.Drawing.Point(3, 0);
             this.lblYaya1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 13);
@@ -217,14 +217,14 @@
             this.lblAna1.AutoEllipsis = true;
             this.lblAna1.AutoSize = true;
             this.lblAna1.BackColor = System.Drawing.Color.Transparent;
-            this.lblAna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAna1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblAna1.Location = new System.Drawing.Point(3, 15);
-            this.lblAna1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.lblAna1.Location = new System.Drawing.Point(3, 20);
+            this.lblAna1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.lblAna1.Name = "lblAna1";
-            this.lblAna1.Size = new System.Drawing.Size(144, 129);
+            this.lblAna1.Size = new System.Drawing.Size(144, 124);
             this.lblAna1.TabIndex = 30;
-            this.lblAna1.Text = "Dur!";
+            this.lblAna1.Text = "Dur";
             this.lblAna1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -328,14 +328,14 @@
             this.lblAna.AutoEllipsis = true;
             this.lblAna.AutoSize = true;
             this.lblAna.BackColor = System.Drawing.Color.Transparent;
-            this.lblAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAna.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblAna.Location = new System.Drawing.Point(3, 15);
-            this.lblAna.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.lblAna.Location = new System.Drawing.Point(3, 20);
+            this.lblAna.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.lblAna.Name = "lblAna";
-            this.lblAna.Size = new System.Drawing.Size(144, 129);
+            this.lblAna.Size = new System.Drawing.Size(144, 124);
             this.lblAna.TabIndex = 35;
-            this.lblAna.Text = "Dur!";
+            this.lblAna.Text = "Dur";
             this.lblAna.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer3
@@ -348,7 +348,7 @@
             this.button3.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(56, 33);
+            this.button3.Location = new System.Drawing.Point(56, 35);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 83);
             this.button3.TabIndex = 36;
@@ -361,7 +361,7 @@
             this.button4.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(241, 33);
+            this.button4.Location = new System.Drawing.Point(241, 35);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 83);
             this.button4.TabIndex = 37;
@@ -982,6 +982,8 @@
             // 
             // aYol1
             // 
+            this.aYol1.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
+            this.aYol1.InitialImage = null;
             this.aYol1.Location = new System.Drawing.Point(56, 122);
             this.aYol1.Name = "aYol1";
             this.aYol1.Size = new System.Drawing.Size(150, 440);
@@ -991,6 +993,7 @@
             // 
             // aYol2
             // 
+            this.aYol2.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
             this.aYol2.Location = new System.Drawing.Point(241, 122);
             this.aYol2.Name = "aYol2";
             this.aYol2.Size = new System.Drawing.Size(150, 440);
@@ -1000,6 +1003,7 @@
             // 
             // yYol1
             // 
+            this.yYol1.Image = global::sinyalizasyonProje.Properties.Resources.effect;
             this.yYol1.Location = new System.Drawing.Point(419, 272);
             this.yYol1.Name = "yYol1";
             this.yYol1.Size = new System.Drawing.Size(150, 290);
@@ -1009,6 +1013,7 @@
             // 
             // yYol2
             // 
+            this.yYol2.Image = global::sinyalizasyonProje.Properties.Resources.effect;
             this.yYol2.Location = new System.Drawing.Point(600, 272);
             this.yYol2.Name = "yYol2";
             this.yYol2.Size = new System.Drawing.Size(150, 290);
@@ -1021,7 +1026,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.ClientSize = new System.Drawing.Size(1178, 658);
+            this.ClientSize = new System.Drawing.Size(1188, 649);
             this.Controls.Add(this.sayYayayol1);
             this.Controls.Add(this.sayAnayol1);
             this.Controls.Add(this.sayYayayol);
