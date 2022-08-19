@@ -119,21 +119,21 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="yayaKirmizi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klasör 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yayaYesil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klasör 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anaYesil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klasör 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anaKirmizi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klasör 1 (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anaSari" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klasör 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\yayaKirmizi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\effect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yayaYesil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yayaYesil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anaKirmizi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anaKirmizi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anaSari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anaSari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anaYesil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anaYesil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

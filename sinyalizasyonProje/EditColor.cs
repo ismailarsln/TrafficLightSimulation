@@ -8,70 +8,39 @@ namespace sinyalizasyonProje
 {
     public partial class Form1
     {
-        public void ay1_editRed() // Ana yol 1 kırmızı oluyor.
+        public void ay_editRed() // Ana yol kırmızı oluyor
         {
-            aYol1_red.Visible = Enabled;
-            aYol1_yellow.Visible = false;
-            aYol1_green.Visible = false;
+            aYol1.Image = Properties.Resources.anaKirmizi;
+            aYol2.Image = Properties.Resources.anaKirmizi;
         }
 
-        private void ay1_editYellow() // Ana yol 1 sarı oluyor.
+        private void ay_editYellow() // Ana yol sarı oluyor
         {
-            aYol1_red.Visible = false;
-            aYol1_yellow.Visible = Enabled;
-            aYol1_green.Visible = false;
+            aYol1.Image = Properties.Resources.anaSari;
+            aYol2.Image = Properties.Resources.anaSari;
         }
 
-        public void ay1_editGreen() // Anayol 1 yeşil oluyor.
+        public void ay_editGreen() // Anayol yeşil oluyor
         {
-            aYol1_green.Visible = Enabled;
-            aYol1_red.Visible = false;
-            aYol1_yellow.Visible = false;
+            aYol1.Image = Properties.Resources.anaYesil;
+            aYol2.Image = Properties.Resources.anaYesil;
         }
 
-        private void ay2_editRed() 
+        private void yy_editRed() // Yaya yol kırmızı oluyor
         {
-            aYol2_red.Visible = Enabled;
-            aYol2_yellow.Visible = false;
-            aYol2_green.Visible = false;
+            yYol1.Image = Properties.Resources.yayaKirmizi;
+            yYol2.Image = Properties.Resources.yayaKirmizi;
         }
 
-        private void ay2_editYellow()
+        private void yy_editGreen() // Yaya yol yeşil oluyor
         {
-            aYol2_red.Visible = false;
-            aYol2_yellow.Visible = Enabled;
-            aYol2_green.Visible = false;
+            yYol1.Image = Properties.Resources.yayaYesil;
+            yYol2.Image = Properties.Resources.yayaYesil;
         }
-
-        public void ay2_editGreen()
+        private void yy_editEffect() // Şeffaflaştırma
         {
-            aYol2_green.Visible = Enabled;
-            aYol2_red.Visible = false;
-            aYol2_yellow.Visible = false;
-        }
-
-        private void yy1_editRed()
-        {
-            yYol1_red.Visible = Enabled;
-            yYol1_green.Visible = false;
-        }
-
-        private void yy1_editGreen()
-        {
-            yYol1_red.Visible = false;
-            yYol1_green.Visible = Enabled;
-        }
-
-        private void yy2_editRed()
-        {
-            yYol2_red.Visible = Enabled;
-            yYol2_green.Visible = false;
-        }
-
-        private void yy2_editGreen()
-        {
-            yYol2_red.Visible = false;
-            yYol2_green.Visible = Enabled;
+            yYol1.Image = Properties.Resources.effect;
+            yYol2.Image = Properties.Resources.effect;
         }
     }
 }

@@ -12,12 +12,12 @@ namespace sinyalizasyonProje
 {
     public partial class Form1 : Form
     {
-        int s = 0;      // Genel sayaç.
-        int sYaya = 9;  // Yayalar için sayaç.
-        int sAna = 17;  // Anayol için sayaç.
-        int say = 0;
+        int s = 0;      // Genel sayaç
+        int sYaya = 9;  // Yayalar için sayaç
+        int sAna = 17;  // Anayol için sayaç
+        int say = 0;    // timer4
 
-        public Form1() // Form açıldığında gelecek ilk ekran.
+        public Form1() // Form açıldığında gelecek ilk ekran
         {
             InitializeComponent();
 
@@ -26,9 +26,22 @@ namespace sinyalizasyonProje
             durum1();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            timer2.Stop();
+            timer3.Stop();
+            timer4.Stop();
+
+            backgroundAna();  // Işığının üzerindeki sayacın arka planını otomatik saydamlaştırır
+            backgroundYaya();
+        }
+
         private void button1_Click(object sender, EventArgs e) // Karşıya geç butonu
         {
             timer1.Start();
+            timer4.Start();
+
             button1.Enabled = false;
             button2.Enabled = false;
 
@@ -38,6 +51,8 @@ namespace sinyalizasyonProje
         private void button2_Click(object sender, EventArgs e) // Karşıya geç butonu
         {
             timer1.Start();
+            timer4.Start();
+
             button1.Enabled = false;
             button2.Enabled = false;
 
@@ -47,12 +62,13 @@ namespace sinyalizasyonProje
         private void button3_Click(object sender, EventArgs e) // Devam et butonu
         {
             timer1.Start();
+            timer4.Start();
 
             if (sYaya < 9 && 0 < sYaya)
             {
                 timer2.Start();
             }
-            if (sAna < 19 && 0 < sAna)
+            if (sAna < 17 && 0 < sAna)
             {
                 timer3.Start();
             }
@@ -70,7 +86,6 @@ namespace sinyalizasyonProje
 
         private void timer1_Tick(object sender, EventArgs e) // Geçen toplam süreyi sayan sayaç
         {
-            timer4.Start();
             s++;
             
             label1.Text = "Geçen toplam süre: " + s.ToString();
@@ -101,9 +116,11 @@ namespace sinyalizasyonProje
 
                 timer1.Stop();
                 timer3.Stop();
+                timer4.Stop();
+
                 MessageBox.Show("Completed", "Info");
 
-                s = 0;  // Sayaçlar ana değerlerine dönüyor.
+                s = 0;  // Sayaçlar ana değerlerine dönüyor
                 sYaya = 9;
                 sAna = 17;
                 say = 0;
@@ -129,63 +146,29 @@ namespace sinyalizasyonProje
             sAna--;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            backgroundAna();  // Işığının üzerindeki sayacın arka planını otomatik ayarlar
-            backgroundYaya();
-        }
-
-        private void timer4_Tick(object sender, EventArgs e)
+        private void timer4_Tick(object sender, EventArgs e) // Son saniyelerde ışığın renginin değişimi
         {
             say++;
-            if (say == 175)
-            {
-                yYol1_green.Image = Properties.Resources.effect;
-                yYol2_green.Image = Properties.Resources.effect;
-                backgroundYaya();
-            }
-            if (say == 182)
-            {
-                yYol1_green.Image = Properties.Resources.yayaYesil;
-                yYol2_green.Image = Properties.Resources.yayaYesil;
-                backgroundYaya();
-            }
-            if (say == 190)
-            {
-                yYol1_green.Image = Properties.Resources.effect;
-                yYol2_green.Image = Properties.Resources.effect;
-                backgroundYaya();
-            }
-            if (say == 197)
-            {
-                yYol1_green.Image = Properties.Resources.yayaYesil;
-                yYol2_green.Image = Properties.Resources.yayaYesil;
-                backgroundYaya();
-            }
 
-            if (say == 205)
+            if (say == 187)
             {
-                yYol1_green.Image = Properties.Resources.effect;
-                yYol2_green.Image = Properties.Resources.effect;
+                yy_editEffect();
                 backgroundYaya();
             }
-            if (say == 212)
+            if (say == 195)
             {
-                yYol1_green.Image = Properties.Resources.yayaYesil;
-                yYol2_green.Image = Properties.Resources.yayaYesil;
+                yy_editGreen();
+                backgroundYaya();
+            }
+            if (say == 203)
+            {
+                yy_editEffect();
                 backgroundYaya();
             }
             if (say == 220)
             {
-                yYol1_green.Image = Properties.Resources.effect;
-                yYol2_green.Image = Properties.Resources.effect;
+                yy_editRed();
                 backgroundYaya();
-            }
-            if (say == 230)
-            {
-                yYol1_green.Image = Properties.Resources.yayaYesil;
-                yYol2_green.Image = Properties.Resources.yayaYesil;
-              //  backgroundYaya();
 
                 timer4.Stop();
             }

@@ -9,15 +9,13 @@ namespace sinyalizasyonProje
 {
     public partial class Form1
     {
-        private void durum1() // durum1 metodu çağrıldığında olacaklar
+        private void durum1() // Durumları ifade eder.
         {
             lblAna.Text = "Geç";
             lblAna1.Text = "Geç";
 
-            ay1_editGreen();
-            ay2_editGreen();
-            yy1_editRed();
-            yy2_editRed();
+            ay_editGreen();
+            yy_editRed();
 
             backgroundAna();
         }
@@ -30,8 +28,7 @@ namespace sinyalizasyonProje
             lblAna.Text = "Yavaşla";
             lblAna1.Text = "Yavaşla";
 
-            ay1_editYellow();
-            ay2_editYellow();
+            ay_editYellow();
         }
 
         private void durum3()
@@ -44,8 +41,7 @@ namespace sinyalizasyonProje
 
             timer3.Start();
 
-            ay1_editRed();
-            ay2_editRed();
+            ay_editRed();
 
             backgroundAna();
         }
@@ -54,30 +50,29 @@ namespace sinyalizasyonProje
         {
             lblYaya.Text = sYaya.ToString();
             lblYaya1.Text = sYaya.ToString();
+
             timer2.Start();
 
-            yy1_editGreen();
-            yy2_editGreen();
+            yy_editGreen();
 
             backgroundYaya();
         }
 
         private void durum5()
         {
-            timer2.Stop();
+            yy_editRed();
+
             lblYaya.Text = "Dur";
             lblYaya1.Text = "Dur";
 
-            yy1_editRed();
-            yy2_editRed();
+            timer2.Stop();
 
             backgroundYaya();
         }
 
         private void durum6()
         {
-            ay1_editYellow();
-            ay2_editYellow();
+            ay_editYellow();
 
             backgroundAna();
         }

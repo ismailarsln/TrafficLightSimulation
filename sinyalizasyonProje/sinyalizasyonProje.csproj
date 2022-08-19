@@ -85,25 +85,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Klasör 1 %281%29.jpg" />
+    <None Include="Resources\yayaKirmizi.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Klasör 1 %281%291.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Klasör 5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Klasör 4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Klasör 3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Klasör 2.png" />
+    <None Include="Resources\yayaYesil.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\effect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaKirmizi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaSari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaYesil.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

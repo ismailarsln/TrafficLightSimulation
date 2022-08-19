@@ -33,14 +33,14 @@ namespace sinyalizasyonProje
 
         private void backgroundAna() // Ana yol ışığının üzerindeki sayacın arka planını düzenler..
         {
-            TransparetBackground(lblAna);
-            TransparetBackground(lblAna1);
+            TransparetBackground(sayAnayol);
+            TransparetBackground(sayAnayol1);
         }
 
         private void backgroundYaya() // Yaya geçidi ışığının üzerindeki sayacın arka planını düzenler..
         {
-            TransparetBackground(lblYaya);
-            TransparetBackground(lblYaya1);
+            TransparetBackground(sayYayayol);
+            TransparetBackground(sayYayayol1);
         }
     }
 }

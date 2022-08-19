@@ -91,31 +91,27 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.yYol2_green = new System.Windows.Forms.PictureBox();
-            this.yYol2_red = new System.Windows.Forms.PictureBox();
-            this.aYol1_yellow = new System.Windows.Forms.PictureBox();
-            this.aYol1_red = new System.Windows.Forms.PictureBox();
-            this.aYol1_green = new System.Windows.Forms.PictureBox();
-            this.aYol2_green = new System.Windows.Forms.PictureBox();
-            this.aYol2_yellow = new System.Windows.Forms.PictureBox();
-            this.aYol2_red = new System.Windows.Forms.PictureBox();
-            this.yYol1_green = new System.Windows.Forms.PictureBox();
-            this.yYol1_red = new System.Windows.Forms.PictureBox();
+            this.sayAnayol = new System.Windows.Forms.TableLayoutPanel();
+            this.sayYayayol = new System.Windows.Forms.TableLayoutPanel();
+            this.sayAnayol1 = new System.Windows.Forms.TableLayoutPanel();
+            this.sayYayayol1 = new System.Windows.Forms.TableLayoutPanel();
+            this.aYol1 = new System.Windows.Forms.PictureBox();
+            this.aYol2 = new System.Windows.Forms.PictureBox();
+            this.yYol1 = new System.Windows.Forms.PictureBox();
+            this.yYol2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol2_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol2_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_yellow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_yellow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).BeginInit();
+            this.sayAnayol.SuspendLayout();
+            this.sayYayayol.SuspendLayout();
+            this.sayAnayol1.SuspendLayout();
+            this.sayYayayol1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol2)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -179,36 +175,54 @@
             // 
             // lblYaya
             // 
+            this.lblYaya.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblYaya.AutoEllipsis = true;
+            this.lblYaya.AutoSize = true;
             this.lblYaya.BackColor = System.Drawing.Color.Transparent;
             this.lblYaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYaya.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblYaya.Location = new System.Drawing.Point(454, 467);
+            this.lblYaya.Location = new System.Drawing.Point(3, 0);
+            this.lblYaya.Margin = new System.Windows.Forms.Padding(3, 0, 3, 13);
             this.lblYaya.Name = "lblYaya";
-            this.lblYaya.Size = new System.Drawing.Size(81, 31);
+            this.lblYaya.Size = new System.Drawing.Size(144, 137);
             this.lblYaya.TabIndex = 20;
             this.lblYaya.Text = "Dur";
             this.lblYaya.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblYaya1
             // 
+            this.lblYaya1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblYaya1.AutoEllipsis = true;
+            this.lblYaya1.AutoSize = true;
             this.lblYaya1.BackColor = System.Drawing.Color.Transparent;
             this.lblYaya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYaya1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblYaya1.Location = new System.Drawing.Point(635, 467);
+            this.lblYaya1.Location = new System.Drawing.Point(3, 0);
+            this.lblYaya1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 13);
             this.lblYaya1.Name = "lblYaya1";
-            this.lblYaya1.Size = new System.Drawing.Size(81, 31);
+            this.lblYaya1.Size = new System.Drawing.Size(144, 137);
             this.lblYaya1.TabIndex = 21;
             this.lblYaya1.Text = "Dur";
             this.lblYaya1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAna1
             // 
+            this.lblAna1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAna1.AutoEllipsis = true;
+            this.lblAna1.AutoSize = true;
             this.lblAna1.BackColor = System.Drawing.Color.Transparent;
             this.lblAna1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAna1.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblAna1.Location = new System.Drawing.Point(269, 185);
+            this.lblAna1.Location = new System.Drawing.Point(3, 15);
+            this.lblAna1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.lblAna1.Name = "lblAna1";
-            this.lblAna1.Size = new System.Drawing.Size(92, 41);
+            this.lblAna1.Size = new System.Drawing.Size(144, 129);
             this.lblAna1.TabIndex = 30;
             this.lblAna1.Text = "Dur!";
             this.lblAna1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,12 +322,18 @@
             // 
             // lblAna
             // 
+            this.lblAna.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAna.AutoEllipsis = true;
+            this.lblAna.AutoSize = true;
             this.lblAna.BackColor = System.Drawing.Color.Transparent;
             this.lblAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAna.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblAna.Location = new System.Drawing.Point(80, 185);
+            this.lblAna.Location = new System.Drawing.Point(3, 15);
+            this.lblAna.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.lblAna.Name = "lblAna";
-            this.lblAna.Size = new System.Drawing.Size(96, 41);
+            this.lblAna.Size = new System.Drawing.Size(144, 129);
             this.lblAna.TabIndex = 35;
             this.lblAna.Text = "Dur!";
             this.lblAna.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -912,115 +932,89 @@
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // yYol2_green
+            // sayAnayol
             // 
-            this.yYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
-            this.yYol2_green.Location = new System.Drawing.Point(600, 272);
-            this.yYol2_green.Name = "yYol2_green";
-            this.yYol2_green.Size = new System.Drawing.Size(150, 290);
-            this.yYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol2_green.TabIndex = 13;
-            this.yYol2_green.TabStop = false;
-            this.yYol2_green.Visible = false;
+            this.sayAnayol.ColumnCount = 1;
+            this.sayAnayol.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayAnayol.Controls.Add(this.lblAna, 0, 0);
+            this.sayAnayol.Location = new System.Drawing.Point(56, 122);
+            this.sayAnayol.Name = "sayAnayol";
+            this.sayAnayol.RowCount = 1;
+            this.sayAnayol.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayAnayol.Size = new System.Drawing.Size(150, 144);
+            this.sayAnayol.TabIndex = 39;
             // 
-            // yYol2_red
+            // sayYayayol
             // 
-            this.yYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
-            this.yYol2_red.Location = new System.Drawing.Point(600, 272);
-            this.yYol2_red.Name = "yYol2_red";
-            this.yYol2_red.Size = new System.Drawing.Size(150, 290);
-            this.yYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol2_red.TabIndex = 12;
-            this.yYol2_red.TabStop = false;
-            this.yYol2_red.Visible = false;
+            this.sayYayayol.ColumnCount = 1;
+            this.sayYayayol.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayYayayol.Controls.Add(this.lblYaya, 0, 0);
+            this.sayYayayol.Location = new System.Drawing.Point(419, 412);
+            this.sayYayayol.Name = "sayYayayol";
+            this.sayYayayol.RowCount = 1;
+            this.sayYayayol.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayYayayol.Size = new System.Drawing.Size(150, 150);
+            this.sayYayayol.TabIndex = 40;
             // 
-            // aYol1_yellow
+            // sayAnayol1
             // 
-            this.aYol1_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
-            this.aYol1_yellow.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_yellow.Name = "aYol1_yellow";
-            this.aYol1_yellow.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_yellow.TabIndex = 1;
-            this.aYol1_yellow.TabStop = false;
-            this.aYol1_yellow.Visible = false;
+            this.sayAnayol1.ColumnCount = 1;
+            this.sayAnayol1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayAnayol1.Controls.Add(this.lblAna1, 0, 0);
+            this.sayAnayol1.Location = new System.Drawing.Point(241, 122);
+            this.sayAnayol1.Name = "sayAnayol1";
+            this.sayAnayol1.RowCount = 1;
+            this.sayAnayol1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayAnayol1.Size = new System.Drawing.Size(150, 144);
+            this.sayAnayol1.TabIndex = 41;
             // 
-            // aYol1_red
+            // sayYayayol1
             // 
-            this.aYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
-            this.aYol1_red.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_red.Name = "aYol1_red";
-            this.aYol1_red.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_red.TabIndex = 0;
-            this.aYol1_red.TabStop = false;
-            this.aYol1_red.Visible = false;
+            this.sayYayayol1.ColumnCount = 1;
+            this.sayYayayol1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayYayayol1.Controls.Add(this.lblYaya1, 0, 0);
+            this.sayYayayol1.Location = new System.Drawing.Point(600, 412);
+            this.sayYayayol1.Name = "sayYayayol1";
+            this.sayYayayol1.RowCount = 1;
+            this.sayYayayol1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.sayYayayol1.Size = new System.Drawing.Size(150, 150);
+            this.sayYayayol1.TabIndex = 42;
             // 
-            // aYol1_green
+            // aYol1
             // 
-            this.aYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
-            this.aYol1_green.Location = new System.Drawing.Point(56, 122);
-            this.aYol1_green.Name = "aYol1_green";
-            this.aYol1_green.Size = new System.Drawing.Size(150, 440);
-            this.aYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol1_green.TabIndex = 2;
-            this.aYol1_green.TabStop = false;
-            this.aYol1_green.Visible = false;
+            this.aYol1.Location = new System.Drawing.Point(56, 122);
+            this.aYol1.Name = "aYol1";
+            this.aYol1.Size = new System.Drawing.Size(150, 440);
+            this.aYol1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol1.TabIndex = 1;
+            this.aYol1.TabStop = false;
             // 
-            // aYol2_green
+            // aYol2
             // 
-            this.aYol2_green.Image = global::sinyalizasyonProje.Properties.Resources.anaYesil;
-            this.aYol2_green.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_green.Name = "aYol2_green";
-            this.aYol2_green.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_green.TabIndex = 8;
-            this.aYol2_green.TabStop = false;
-            this.aYol2_green.Visible = false;
+            this.aYol2.Location = new System.Drawing.Point(241, 122);
+            this.aYol2.Name = "aYol2";
+            this.aYol2.Size = new System.Drawing.Size(150, 440);
+            this.aYol2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aYol2.TabIndex = 7;
+            this.aYol2.TabStop = false;
             // 
-            // aYol2_yellow
+            // yYol1
             // 
-            this.aYol2_yellow.Image = global::sinyalizasyonProje.Properties.Resources.anaSari;
-            this.aYol2_yellow.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_yellow.Name = "aYol2_yellow";
-            this.aYol2_yellow.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_yellow.TabIndex = 7;
-            this.aYol2_yellow.TabStop = false;
-            this.aYol2_yellow.Visible = false;
+            this.yYol1.Location = new System.Drawing.Point(419, 272);
+            this.yYol1.Name = "yYol1";
+            this.yYol1.Size = new System.Drawing.Size(150, 290);
+            this.yYol1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol1.TabIndex = 4;
+            this.yYol1.TabStop = false;
             // 
-            // aYol2_red
+            // yYol2
             // 
-            this.aYol2_red.Image = global::sinyalizasyonProje.Properties.Resources.anaKirmizi;
-            this.aYol2_red.Location = new System.Drawing.Point(241, 122);
-            this.aYol2_red.Name = "aYol2_red";
-            this.aYol2_red.Size = new System.Drawing.Size(150, 440);
-            this.aYol2_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.aYol2_red.TabIndex = 6;
-            this.aYol2_red.TabStop = false;
-            this.aYol2_red.Visible = false;
-            // 
-            // yYol1_green
-            // 
-            this.yYol1_green.Image = global::sinyalizasyonProje.Properties.Resources.yayaYesil;
-            this.yYol1_green.Location = new System.Drawing.Point(419, 272);
-            this.yYol1_green.Name = "yYol1_green";
-            this.yYol1_green.Size = new System.Drawing.Size(150, 290);
-            this.yYol1_green.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol1_green.TabIndex = 4;
-            this.yYol1_green.TabStop = false;
-            this.yYol1_green.Visible = false;
-            // 
-            // yYol1_red
-            // 
-            this.yYol1_red.Image = global::sinyalizasyonProje.Properties.Resources.yayaKirmizi;
-            this.yYol1_red.Location = new System.Drawing.Point(419, 272);
-            this.yYol1_red.Name = "yYol1_red";
-            this.yYol1_red.Size = new System.Drawing.Size(150, 290);
-            this.yYol1_red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yYol1_red.TabIndex = 3;
-            this.yYol1_red.TabStop = false;
-            this.yYol1_red.Visible = false;
+            this.yYol2.Location = new System.Drawing.Point(600, 272);
+            this.yYol2.Name = "yYol2";
+            this.yYol2.Size = new System.Drawing.Size(150, 290);
+            this.yYol2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yYol2.TabIndex = 13;
+            this.yYol2.TabStop = false;
             // 
             // Form1
             // 
@@ -1028,30 +1022,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.ClientSize = new System.Drawing.Size(1178, 658);
-            this.Controls.Add(this.lblYaya1);
-            this.Controls.Add(this.lblYaya);
+            this.Controls.Add(this.sayYayayol1);
+            this.Controls.Add(this.sayAnayol1);
+            this.Controls.Add(this.sayYayayol);
+            this.Controls.Add(this.sayAnayol);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.lblAna);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.lblAna1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.yYol2_green);
-            this.Controls.Add(this.yYol2_red);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.aYol1_yellow);
-            this.Controls.Add(this.aYol1_red);
-            this.Controls.Add(this.aYol1_green);
-            this.Controls.Add(this.aYol2_green);
-            this.Controls.Add(this.aYol2_yellow);
-            this.Controls.Add(this.aYol2_red);
-            this.Controls.Add(this.yYol1_green);
-            this.Controls.Add(this.yYol1_red);
+            this.Controls.Add(this.aYol1);
+            this.Controls.Add(this.aYol2);
+            this.Controls.Add(this.yYol1);
+            this.Controls.Add(this.yYol2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1069,94 +1057,93 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol2_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol2_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_yellow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol1_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_yellow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aYol2_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yYol1_red)).EndInit();
+            this.sayAnayol.ResumeLayout(false);
+            this.sayAnayol.PerformLayout();
+            this.sayYayayol.ResumeLayout(false);
+            this.sayYayayol.PerformLayout();
+            this.sayAnayol1.ResumeLayout(false);
+            this.sayAnayol1.PerformLayout();
+            this.sayYayayol1.ResumeLayout(false);
+            this.sayYayayol1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aYol2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yYol2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        public System.Windows.Forms.PictureBox aYol1_red;
-        public System.Windows.Forms.PictureBox aYol1_yellow;
-        public System.Windows.Forms.PictureBox aYol1_green;
-        public System.Windows.Forms.PictureBox yYol1_red;
-        public System.Windows.Forms.PictureBox yYol1_green;
-        public System.Windows.Forms.Timer timer1;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox aYol2_green;
-        public System.Windows.Forms.PictureBox aYol2_yellow;
-        public System.Windows.Forms.PictureBox aYol2_red;
-        public System.Windows.Forms.PictureBox yYol2_green;
-        public System.Windows.Forms.PictureBox yYol2_red;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Timer timer2;
-        public System.Windows.Forms.Label lblYaya;
-        public System.Windows.Forms.Label lblYaya1;
-        public System.Windows.Forms.Label lblAna1;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label lblAna;
-        public System.Windows.Forms.Timer timer3;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Label label10;
-        public System.Windows.Forms.Label label11;
-        public System.Windows.Forms.Label label16;
-        public System.Windows.Forms.Label label21;
-        public System.Windows.Forms.Label label26;
-        public System.Windows.Forms.Label label31;
-        public System.Windows.Forms.Label label36;
-        public System.Windows.Forms.Label label41;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        public System.Windows.Forms.Label label45;
-        public System.Windows.Forms.Label label44;
-        public System.Windows.Forms.Label label43;
-        public System.Windows.Forms.Label label42;
-        public System.Windows.Forms.Label label40;
-        public System.Windows.Forms.Label label39;
-        public System.Windows.Forms.Label label38;
-        public System.Windows.Forms.Label label37;
-        public System.Windows.Forms.Label label35;
-        public System.Windows.Forms.Label label34;
-        public System.Windows.Forms.Label label33;
-        public System.Windows.Forms.Label label32;
-        public System.Windows.Forms.Label label30;
-        public System.Windows.Forms.Label label29;
-        public System.Windows.Forms.Label label28;
-        public System.Windows.Forms.Label label27;
-        public System.Windows.Forms.Label label25;
-        public System.Windows.Forms.Label label24;
-        public System.Windows.Forms.Label label23;
-        public System.Windows.Forms.Label label22;
-        public System.Windows.Forms.Label label20;
-        public System.Windows.Forms.Label label19;
-        public System.Windows.Forms.Label label18;
-        public System.Windows.Forms.Label label17;
-        public System.Windows.Forms.Label label15;
-        public System.Windows.Forms.Label label14;
-        public System.Windows.Forms.Label label13;
-        public System.Windows.Forms.Label label12;
-        public System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.TableLayoutPanel sayAnayol;
+        private System.Windows.Forms.TableLayoutPanel sayYayayol;
+        private System.Windows.Forms.TableLayoutPanel sayAnayol1;
+        private System.Windows.Forms.TableLayoutPanel sayYayayol1;
+        private System.Windows.Forms.PictureBox aYol1;
+        private System.Windows.Forms.PictureBox yYol1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox aYol2;
+        private System.Windows.Forms.PictureBox yYol2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label lblYaya;
+        private System.Windows.Forms.Label lblYaya1;
+        private System.Windows.Forms.Label lblAna1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblAna;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Timer timer4;
     }
 }
